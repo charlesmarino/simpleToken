@@ -1,6 +1,6 @@
- solidity 0.4.11;
+pragma solidity ^0.4.2;
 
-contract simpleToken {
+contract SimpleToken {
     /* Public variables of the token */
     string public standard = 'Token 0.1';
     string public name;
@@ -16,7 +16,7 @@ contract simpleToken {
     event Transfer(address indexed from, address indexed to, uint256 value);
 
     /* Initializes contract with initial supply tokens to the creator of the contract */
-    function token(
+    function SimpleToken(
         uint256 initialSupply,
         string tokenName,
         uint8 decimalUnits,
